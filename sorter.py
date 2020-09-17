@@ -4,7 +4,7 @@ import math
 
 def bucket_iteration(eingabe, stellenwert):
     output = [0 for i in range(len(eingabe))]
-    counts = [0 for i in range(10)]
+    counts = [0]*10
     for number in eingabe:
         counts[get_Digit_from_right_to_left(number, stellenwert)] += 1
     sum = 0
