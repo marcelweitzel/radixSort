@@ -3,7 +3,7 @@ import math
 
 
 def bucket_iteration(eingabe, stellenwert):
-    output = [0 for i in range(len(eingabe))]
+    output = [0]*len(eingabe)
     counts = [0]*10
     for number in eingabe:
         counts[get_Digit_from_right_to_left(number, stellenwert)] += 1
